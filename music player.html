@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music plyer</title>
+  </head>
+  <body>
+    <div>
+      <video class="video" src="videos/video-360p.mp4"></video>
+    </div>
+    <div>
+      <button class="stop-button">play</button>
+      <button class="skip">25s</button>
+      <button class="back">-10</button>
+      <input
+        type="range"
+        name="volum"
+        max="1"
+        min="0"
+        class="volum-rng"
+        step="0.05"
+        value="1"
+      />
+      <input
+        type="range"
+        name="volum"
+        max="2"
+        min="0.5"
+        class="video-rng"
+        step="0.1"
+        value="1"
+      />
+    </div>
+  </body>
+</html>
