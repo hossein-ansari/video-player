@@ -3,3 +3,64 @@
   margin: 0;
   padding: 0;
 }
+.box {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    152deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(201, 120, 208, 1) 100%
+  );
+  padding-top: 5em;
+  padding-bottom: 4em;
+}
+.div-video {
+  margin: 0 auto;
+}
+.video {
+  border-radius: 10px 10px 10px 10px;
+  margin: 0 auto;
+  padding-top: 3em;
+
+}
+.col button {
+  border: hidden;
+}
+.col {
+  border-radius: 15px;
+  margin: 0em auto;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.651);
+  border: 2px solid white;
+}
+.btns {
+  margin-left: 6em; 
+  padding-bottom: 2em;
+}
+.back {
+  font-size: 1.2rem;
+}
+.backi {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+.progresbar {
+  height: 8px;
+  width: 640px;
+  background-color: red;
+  z-index: 5;
+}
+.div-video {
+  width: 640px;
+}
+.progresbar-c {
+  width: 640px;
+  background-color: rgba(0, 0, 0, 0.267);
+  height: 8px;
+}
+.skip{
+    font-size: 1.2rem;
+    
+}
+.stop-button{
+    font-size: 1.2rem;
+}

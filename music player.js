@@ -1,11 +1,11 @@
 var play = document.querySelector(".stop-button");
 var skip = document.querySelector(".skip");
 var back = document.querySelector(".back");
-var ranges = document.querySelector(".ranges");
+var range = document.querySelector(".range");
 var video = document.querySelector(".video");
-var withBar = document.querySelector(".with-bar");
-var input = document.querySelector("input")
-var playercont = document.querySelector(".playercont")
+var progresbar = document.querySelector(".progresbar");
+var input = document.querySelector("input");
+var playercont = document.querySelector(".playercont");
 
 function playVideo() {
   if (video.paused) {
@@ -19,7 +19,7 @@ function skiptime() {
 }
 function handletime() {
   const present = parseFloat(video.currentTime / video.duration) * 100;
-  withBar.style.width = present + "%";
+  progresbar.style.width = present + "%";
 }
 // for navbar video
 function handleclick(e) {
@@ -41,9 +41,9 @@ play.addEventListener("click", playVideo);
 skip.addEventListener("click", skiptime);
 back.addEventListener("click", skiptime);
 video.addEventListener("timeupdate", handletime);
-withBar.addEventListener("click", handleclick);
+progresbar.addEventListener("click", handleclick);
 video.addEventListener("click", playVideo);
-ranges.addEventListener("change", volumhandle);
+range.addEventListener("change", volumhandle);
 playercont.addEventListener("click", toggleFullscreen);
 
 window.addEventListener("keydown", (event) => {
