@@ -4,34 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="music player.css">
     <title>music plyer</title>
   </head>
+  <style>
+    .with-bar{
+      height : 8px ;
+      width : 640px ;
+      background-color:red;
+      z-index: 5;
+    }
+    .video-divs{
+      width: 640px;
+    }
+    .with-bar-c{
+      width : 640px ;
+      background-color:rgba(0, 0, 0, 0.267);
+      height : 8px ;
+      
+    }
+  </style>
   <body>
-    <div>
+
+    <div class="col">
+      <div class="video-divs">
       <video class="video" src="videos/video-360p.mp4"></video>
+      <div class="with-bar" >
+        <div class="with-bar-c">
+
+      </div>
     </div>
-    <div>
+      </div>
+      <button class="playercont">fullscreen</button>
       <button class="stop-button">play</button>
-      <button class="skip">25s</button>
-      <button class="back">-10</button>
+      <button shortcut= " " data-skip="25" class="skip">25s</button>
+      <button data-skip="-10" class="back">-10</button>
       <input
         type="range"
         name="volum"
         max="1"
         min="0"
-        class="volum-rng"
+        class="ranges"
         step="0.05"
-        value="1"
-      />
-      <input
-        type="range"
-        name="volum"
-        max="2"
-        min="0.5"
-        class="video-rng"
-        step="0.1"
-        value="1"
+        value="0.5"
       />
     </div>
+    <script src="music player.js"></script>
   </body>
 </html>
