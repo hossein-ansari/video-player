@@ -8,17 +8,15 @@
     <title>music plyer</title>
   </head>
   <body>
-    
-    ///////////////////////////////////////////////////////////////
     <div class="document-video">
       <div class="videobar">
         <div class="div-video">
       <video class="video" src="videos/video2.mp4"></video>
-
       <div class="progresbar">
         <div class="div__progresbar"></div>
       </div>
     </div>
+    <section class="control-bar">
     <section class="controlBar">
       <div class="btns">
         <button data-skip="-10" class="back">
@@ -39,14 +37,14 @@
           min="0"
           class="range"
           step="0.05"
-          value="0.5"
+          value="1"
         />
         <button class="playercont"><i class="fa-solid fa-expand"></i></button>
       </div>
+    </div>
     </section>
-    <div class="doc-video"></div>
-      </div>
-    
+
+    </section>
 
     <div class="Extravideos">
       <div class="related-videos">
@@ -56,7 +54,23 @@
       <div class="public-video"></div>
     </div>
     </div>
+    <div class="doc-video">
+      <div class="producer">
+        <div class="producer-description">
+          <img class="producer-img" src="img/default video.png" alt="">
+          <h2 class="producer-name">winter</h2>
+        </div>
+        <div class="producer-duc">
+          <p><i class="fa-solid fa-thumbs-up"></i></p>
+          <p><i class="fa-solid fa-thumbs-down"></i></p>
+        </div>
+        
+      </div>
+
+    </div>
+        
     <script src="video player.js"></script>
+    <script src="related video.js"></script>
     <script
       src="https://kit.fontawesome.com/39e8390850.js"
       crossorigin="anonymous"

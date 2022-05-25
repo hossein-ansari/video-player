@@ -19,9 +19,8 @@ body {
   background-color: rgb(99, 72, 255);
   z-index: 5;
   border-radius: 5px;
-    margin: 5px 0px;
-
-
+  margin: 5px 0px;
+  
 }
 .div__progresbar {
   border-radius: 5px;
@@ -90,14 +89,17 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .controlBar {
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 640px;
+  width: 620px;
 }
 .document-video {
   display: flex;
+
+
 }
 .related-videos {
   border-radius: 20px;
@@ -117,4 +119,55 @@ input[type="range"]::-webkit-slider-thumb {
 .hr-related {
   border: 6px dashed var(--bodycolor);
   margin: 0px 5px;
+}
+.control-bar{
+  background-color: var(--divcolor);
+  width: 640px;
+  padding: 10px 0 ;
+  border-radius: 8px;
+}
+.producer{
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vh;
+  margin-left: 4vw;
+}
+.producer-description{
+  display: flex;
+}
+.producer-name{
+  color: white;
+  margin-left: 1em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.producer-img{
+
+  width: 70px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius:50%
+}
+.producer-duc{
+ display: flex;
+ 
+ 
+}
+
+.fa-thumbs-up{
+  padding: 10px 21px;
+  font-size: 1.8rem;
+  color: white;
+  background-color: #ee5553;
+  border-radius:10px;
+  margin-right: 10px;
+  
+}
+.fa-thumbs-down{
+  padding: 10px 20px;
+  font-size: 1.8rem;
+  color: white;
+  background-color: #ee5553;
+  border-radius:10px;
+  
 }
